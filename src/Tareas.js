@@ -15,7 +15,6 @@ function Tareas() {
     dispatch({ type: "AGREGAR_TAREA", payload: tarea });
     setTarea("");
   };
-
   return (
     <div>
       <input
