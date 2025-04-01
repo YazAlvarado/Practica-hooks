@@ -1,0 +1,157 @@
+body {
+  font-family: "Georgia", serif;
+  background-color: #f1e0c6;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  color: #3d3d3d;
+}
+.App {
+  width: 100%;
+  max-width: 480px;
+  padding: 20px;
+  background: linear-gradient(145deg, #c29c6b, #d2b78f);
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  box-sizing: border-box;
+}
+.App-header {
+  color: #3e2723;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+.App-logo {
+  width: 120px;
+  margin-bottom: 20px;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  animation: spinLogo 3s linear infinite;
+}
+
+/* Keyframe animation for logo */
+@keyframes spinLogo {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Input styles */
+input {
+  width: 100%;
+  padding: 12px 1px;
+  margin: 10px 0;
+  border: 1px solid #8e7a4e;
+  border-radius: 8px;
+  background-color: #f9f0e3;
+  font-size: 16px;
+  color: #3d2f1d;
+  transition: all 0.3s ease;
+}
+
+input:focus {
+  border-color: #b59c6b;
+  box-shadow: 0 0 10px rgba(181, 156, 107, 0.5);
+  outline: none;
+}
+
+input::placeholder {
+  color: #8c6d4e;
+  font-style: italic;
+}
+
+input:focus::placeholder {
+  color: #3d2f1d;
+  font-style: normal;
+}
+
+/* Button styles */
+button {
+  padding: 10px 20px;
+  margin: 10px 5px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: #7c5b3a;
+  color: white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Specific button hover effect */
+button:first-of-type {
+  background-color: #ab7a4b;
+}
+
+button:first-of-type:hover {
+  background-color: #9a6e3e;
+}
+
+button:last-of-type {
+  background-color: #9c7353;
+}
+
+button:last-of-type:hover {
+  background-color: #85603c;
+}
+
+/* Task list styles */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background-color: #fff5e1;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+li button {
+  padding: 8px 16px;
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .App {
+    padding: 15px;
+  }
+  .App-logo {
+    width: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  .App {
+    padding: 10px;
+  }
+  .App-logo {
+    width: 80px;
+  }
+}
